@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Zhy.Components.Tree</id>
+    <version>1.0.0</version>
+    <title>Zhy.Components.Tree</title>
+    <authors>WineMonk</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">LICENSE</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>logo@180.png</icon>
+    <readme>README.md</readme>
+    <description>可查询树结构</description>
+    <copyright>©2024 By WineMonk</copyright>
+    <tags>Tree</tags>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.1">
+        <dependency id="System.Text.Json" version="4.6.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.6.2">
+        <dependency id="System.Text.Json" version="4.6.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.7">
+        <dependency id="System.Text.Json" version="4.7.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.7.1">
+        <dependency id="System.Text.Json" version="4.7.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.7.2">
+        <dependency id="System.Text.Json" version="4.7.2" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.8">
+        <dependency id="System.Text.Json" version="4.7.2" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.8.1">
+        <dependency id="System.Text.Json" version="4.7.2" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETCoreApp3.0" />
+      <group targetFramework=".NETCoreApp3.1" />
+      <group targetFramework="net5.0-windows7.0" />
+      <group targetFramework="net6.0-windows7.0" />
+      <group targetFramework="net7.0-windows7.0" />
+      <group targetFramework="net8.0-windows7.0" />
+    </dependencies>
+    <contentFiles>
+      <files include="any/net461/logo_light.ico" buildAction="Content" />
+      <files include="any/net462/logo_light.ico" buildAction="Content" />
+      <files include="any/net47/logo_light.ico" buildAction="Content" />
+      <files include="any/net471/logo_light.ico" buildAction="Content" />
+      <files include="any/net472/logo_light.ico" buildAction="Content" />
+      <files include="any/net48/logo_light.ico" buildAction="Content" />
+      <files include="any/net481/logo_light.ico" buildAction="Content" />
+      <files include="any/net5.0-windows7.0/logo_light.ico" buildAction="Content" />
+      <files include="any/net6.0-windows7.0/logo_light.ico" buildAction="Content" />
+      <files include="any/net7.0-windows7.0/logo_light.ico" buildAction="Content" />
+      <files include="any/net8.0-windows7.0/logo_light.ico" buildAction="Content" />
+      <files include="any/netcoreapp3.0/logo_light.ico" buildAction="Content" />
+      <files include="any/netcoreapp3.1/logo_light.ico" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\bin\Debug\net461\Zhy.Components.Tree.dll" target="lib\net461\Zhy.Components.Tree.dll" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\bin\Debug\net461\Zhy.Components.Tree.xml" target="lib\net461\Zhy.Components.Tree.xml" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\bin\Debug\net462\Zhy.Components.Tree.dll" target="lib\net462\Zhy.Components.Tree.dll" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\bin\Debug\net462\Zhy.Components.Tree.xml" target="lib\net462\Zhy.Components.Tree.xml" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\bin\Debug\net47\Zhy.Components.Tree.dll" target="lib\net47\Zhy.Components.Tree.dll" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\bin\Debug\net47\Zhy.Components.Tree.xml" target="lib\net47\Zhy.Components.Tree.xml" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\bin\Debug\net471\Zhy.Components.Tree.dll" target="lib\net471\Zhy.Components.Tree.dll" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\bin\Debug\net471\Zhy.Components.Tree.xml" target="lib\net471\Zhy.Components.Tree.xml" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\bin\Debug\net472\Zhy.Components.Tree.dll" target="lib\net472\Zhy.Components.Tree.dll" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\bin\Debug\net472\Zhy.Components.Tree.xml" target="lib\net472\Zhy.Components.Tree.xml" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\bin\Debug\net48\Zhy.Components.Tree.dll" target="lib\net48\Zhy.Components.Tree.dll" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\bin\Debug\net48\Zhy.Components.Tree.xml" target="lib\net48\Zhy.Components.Tree.xml" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\bin\Debug\net481\Zhy.Components.Tree.dll" target="lib\net481\Zhy.Components.Tree.dll" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\bin\Debug\net481\Zhy.Components.Tree.xml" target="lib\net481\Zhy.Components.Tree.xml" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\bin\Debug\net5.0-windows\Zhy.Components.Tree.dll" target="lib\net5.0-windows7.0\Zhy.Components.Tree.dll" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\bin\Debug\net5.0-windows\Zhy.Components.Tree.xml" target="lib\net5.0-windows7.0\Zhy.Components.Tree.xml" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\bin\Debug\net6.0-windows\Zhy.Components.Tree.dll" target="lib\net6.0-windows7.0\Zhy.Components.Tree.dll" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\bin\Debug\net6.0-windows\Zhy.Components.Tree.xml" target="lib\net6.0-windows7.0\Zhy.Components.Tree.xml" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\bin\Debug\net7.0-windows\Zhy.Components.Tree.dll" target="lib\net7.0-windows7.0\Zhy.Components.Tree.dll" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\bin\Debug\net7.0-windows\Zhy.Components.Tree.xml" target="lib\net7.0-windows7.0\Zhy.Components.Tree.xml" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\bin\Debug\net8.0-windows\Zhy.Components.Tree.dll" target="lib\net8.0-windows7.0\Zhy.Components.Tree.dll" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\bin\Debug\net8.0-windows\Zhy.Components.Tree.xml" target="lib\net8.0-windows7.0\Zhy.Components.Tree.xml" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\bin\Debug\netcoreapp3.0\Zhy.Components.Tree.dll" target="lib\netcoreapp3.0\Zhy.Components.Tree.dll" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\bin\Debug\netcoreapp3.0\Zhy.Components.Tree.xml" target="lib\netcoreapp3.0\Zhy.Components.Tree.xml" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\bin\Debug\netcoreapp3.1\Zhy.Components.Tree.dll" target="lib\netcoreapp3.1\Zhy.Components.Tree.dll" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\bin\Debug\netcoreapp3.1\Zhy.Components.Tree.xml" target="lib\netcoreapp3.1\Zhy.Components.Tree.xml" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\logo_light.ico" target="content\logo_light.ico" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\logo_light.ico" target="contentFiles\any\net461\logo_light.ico" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\logo_light.ico" target="contentFiles\any\net462\logo_light.ico" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\logo_light.ico" target="contentFiles\any\net47\logo_light.ico" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\logo_light.ico" target="contentFiles\any\net471\logo_light.ico" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\logo_light.ico" target="contentFiles\any\net472\logo_light.ico" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\logo_light.ico" target="contentFiles\any\net48\logo_light.ico" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\logo_light.ico" target="contentFiles\any\net481\logo_light.ico" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\logo_light.ico" target="contentFiles\any\net5.0-windows7.0\logo_light.ico" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\logo_light.ico" target="contentFiles\any\net6.0-windows7.0\logo_light.ico" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\logo_light.ico" target="contentFiles\any\net7.0-windows7.0\logo_light.ico" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\logo_light.ico" target="contentFiles\any\net8.0-windows7.0\logo_light.ico" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\logo_light.ico" target="contentFiles\any\netcoreapp3.0\logo_light.ico" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\logo_light.ico" target="contentFiles\any\netcoreapp3.1\logo_light.ico" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\LICENSE" target="\LICENSE" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\logo@180.png" target="\logo@180.png" />
+    <file src="D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\README.md" target="\README.md" />
+  </files>
+</package>
