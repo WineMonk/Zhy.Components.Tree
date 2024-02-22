@@ -4,106 +4,167 @@
 
 [主 页](https://shaoshao.net.cn)
 
-[GitHub](https://github.com/WineMonk/Zhy.Components.Configuration.git)
+[GitHub](https://github.com/WineMonk/Zhy.Components.Tree.git)
 
-[API帮助文档](https://github.com/WineMonk/Zhy.Components.Configuration/tree/master/Doc/Help/CHM)
+[API帮助文档](https://github.com/WineMonk/Zhy.Components.Tree/tree/master/Doc/Help/CHM)
 
-Config配置文件组件，支持运行时读取、写入配置、加解密、运行时类型转换器，修改静态配置文件无感刷新运行时配置...
+可查询树结构
 
 ## Demo
 
-加密器：
+Tree.cs
 
 ```csharp
-/// <summary>
-/// 加密器
-/// </summary>
-public class TestEncipher : IConfigurationEncipher
+public class Tree : ObservableObject,IObservableTree<Tree>
 {
-    public string Decrypt(string ciphertext)
+    private string _name;
+    public string Name 
     {
-        return ciphertext.Replace("加密了：", "");
+        get => _name;
+        set => SetProperty(ref _name, value);
+    }
+    [JsonIgnore]
+    public Tree? Parent { get; set; }
+    private ObservableCollection<Tree>? _children;
+    public ObservableCollection<Tree>? Children
+    {
+        get => _children;
+        set => SetProperty(ref _children, value);
     }
 
-    public string Encrypt(string plaintext)
+    public Tree Clone()
     {
-        return "加密了：" + plaintext;
-    }
-}
-```
-
-转换器：
-
-```csharp
-/// <summary>
-/// 转换器
-/// </summary>
-public class IntNullableConfigurationConverter : IConfigurationConverter
-{
-    public object Read(string value)
-    {
-        if (value == null)
+        Tree clone = new Tree();
+        clone.Name = Name;
+        if (Children?.Count > 0)
         {
-            return null;
+            clone.Children = new ObservableCollection<Tree>();
+            foreach (var child in Children)
+            {
+                Tree childClone = child.Clone();
+                childClone.Parent = clone;
+                clone.Children.Add(childClone);
+            }
         }
-        int? valueAsInt = int.Parse(value);
-        return valueAsInt;
-    }
-
-    public string Write(object value)
-    {
-        if (value == null)
-        {
-            return string.Empty;
-        }
-        return value + "";
+        return clone;
     }
 }
 ```
 
-配置上下文：
+TestTree.cs
 
 ```csharp
-/// <summary>
-/// 配置上下文
-/// </summary>
-[ConfigurationContext(IsHotload = true)]
-public class AppConfig : ConfigurationContextBase
+public class TestTree
 {
-    public string? ActiveToken { get; set; }
-    
-    [ConfigurationItem("active_user")]
-    public string? ActiveUser { get; set; }
+    public TestTree() { }
 
-    [ConfigurationItem("active_user_pwd", encipherType: typeof(TestEncipher))]
-    public string? ActiveUserPassword { get; set; }
-
-    [ConfigurationItem("request_timeout_s", converterType: typeof(IntNullableConfigurationConverter))]
-    public int? TimeOut { get; set; }
-
-    private static AppConfig? _instance;
-    private AppConfig() { }
-    public static AppConfig Instance
+    public Tree GetTree() 
     {
-        get => _instance ??= new AppConfig();
+        Tree treeRoot = new Tree
+        {
+            Name = "0"
+        };
+        Tree tree01 = new Tree
+        {
+            Name = "0-1",
+            Parent = treeRoot
+        };
+        tree01.Children = new ObservableCollection<Tree>
+        {
+            new Tree
+            {
+                Name = "0-1-1",
+                Parent = tree01
+            },
+            new Tree
+            {
+                Name = "0-1-2",
+                Parent = tree01
+            },
+            new Tree
+            {
+                Name = "0-1-3",
+                Parent = tree01
+            },
+        };
+        Tree tree02 = new Tree
+        {
+            Name = "0-2",
+            Parent = treeRoot
+        };
+        tree02.Children = new ObservableCollection<Tree>
+        {
+            new Tree
+            {
+                Name = "0-2-1",
+                Parent = tree02
+            },
+            new Tree
+            {
+                Name = "0-2-2",
+                Parent = tree02
+            },
+            new Tree
+            {
+                Name = "0-2-3",
+                Parent = tree02
+            },
+        };
+        Tree tree03 = new Tree
+        {
+            Name = "0-3",
+            Parent = treeRoot
+        };
+        tree03.Children = new ObservableCollection<Tree>
+        {
+            new Tree
+            {
+                Name = "0-3-1",
+                Parent = tree03
+            },
+            new Tree
+            {
+                Name = "0-3-2",
+                Parent = tree03
+            },
+            new Tree
+            {
+                Name = "0-3-3",
+                Parent = tree03
+            },
+        };
+        treeRoot.Children = new ObservableCollection<Tree> { tree01, tree02, tree03 };
+        return treeRoot;
     }
-    public override string GetPersistentPath()
+
+    public void TestSearch()
     {
-        return AppDomain.CurrentDomain.BaseDirectory + "bin\\conf\\app.config";
+        Tree treeRoot = GetTree();
+        Tree? tree = treeRoot.Search(n => n?.Name.Contains("-1") == true);
     }
-}
-```
 
-配置文件：
+    public void TestSafeTraversal()
+    {
+        Tree treeRoot = GetTree();
+        treeRoot.SafeTraversal(t =>
+                               {
+                                   if (t?.Name.Contains("-2") == true)
+                                   {
+                                       t?.Parent?.Children?.Remove(t);
+                                   }
+                               });
+    }
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-    <appSettings>
-        <add key="active_user" value="admin" />
-        <add key="active_user_pwd" value="加密了：admin123" />
-        <add key="request_timeout_s" value="10" />
-    </appSettings>
-</configuration>
+    public string TestToJson()
+    {
+        Tree treeRoot = GetTree();
+        string jsonText = JsonSerializer.Serialize(treeRoot);
+        return jsonText;
+    }
+    public Tree? TestFromJson(string jsonText)
+    {
+        Tree? treeRoot = TreeUtil.JsonToObservableTree<Tree>(jsonText);
+        return treeRoot;
+    }
 ```
 

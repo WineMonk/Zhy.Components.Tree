@@ -16,10 +16,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("©2024 By WineMonk")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("可查询树结构")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6850b50d3f9b9f8c35af18249fa5c53bb17c017e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Zhy.Components.Tree")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Zhy.Components.Tree")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyMetadataAttribute("RepositoryUrl", "https://github.com/WineMonk/Zhy.Components.Tree")]
 [assembly: System.Resources.NeutralResourcesLanguageAttribute("zh-CN")]
 
 // 由 MSBuild WriteCodeFragment 类生成。

@@ -10,10 +10,11 @@
     <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
     <icon>logo@180.png</icon>
     <readme>README.md</readme>
+    <projectUrl>https://github.com/WineMonk/Zhy.Components.Tree</projectUrl>
     <description>可查询树结构</description>
     <copyright>©2024 By WineMonk</copyright>
     <tags>Tree</tags>
-    <repository type="git" />
+    <repository type="git" url="https://github.com/WineMonk/Zhy.Components.Tree" commit="6850b50d3f9b9f8c35af18249fa5c53bb17c017e" />
     <dependencies>
       <group targetFramework=".NETFramework4.6.1">
         <dependency id="System.Text.Json" version="4.6.0" exclude="Build,Analyzers" />

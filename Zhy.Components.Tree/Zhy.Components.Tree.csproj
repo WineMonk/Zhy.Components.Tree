@@ -11,6 +11,8 @@
 	  <Copyright>©2024 By WineMonk</Copyright>
 	  <PackageReadmeFile>README.md</PackageReadmeFile>
 	  <PackageTags>Tree;</PackageTags>
+	  <PackageProjectUrl>https://github.com/WineMonk/Zhy.Components.Tree</PackageProjectUrl>
+	  <RepositoryUrl>https://github.com/WineMonk/Zhy.Components.Tree</RepositoryUrl>
 	  <NeutralLanguage>zh-CN</NeutralLanguage>
 	  <AssemblyVersion>1.0.0</AssemblyVersion>
 	  <FileVersion>1.0.0</FileVersion>

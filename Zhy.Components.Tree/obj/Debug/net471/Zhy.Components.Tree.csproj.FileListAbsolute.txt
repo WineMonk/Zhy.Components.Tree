@@ -31,3 +31,4 @@ D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\
 D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\obj\Debug\net471\Zhy.Components.Tree.pdb
 D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\bin\Debug\net471\Zhy.Components.Tree.xml
 D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\obj\Debug\net471\Zhy.Components.Tree.xml
+D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\obj\Debug\net471\Zhy.Components.Tree.sourcelink.json

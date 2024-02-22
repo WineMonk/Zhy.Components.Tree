@@ -11,3 +11,4 @@ D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\
 D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\obj\Debug\net8.0-windows\ref\Zhy.Components.Tree.dll
 D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\bin\Debug\net8.0-windows\Zhy.Components.Tree.xml
 D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\obj\Debug\net8.0-windows\Zhy.Components.Tree.xml
+D:\file\program\zhyhub\c\Zhy.Components\Zhy.Components.Tree\Zhy.Components.Tree\obj\Debug\net8.0-windows\Zhy.Components.Tree.sourcelink.json
