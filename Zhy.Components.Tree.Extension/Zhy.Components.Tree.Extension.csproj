@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<TargetFrameworks>net461;net462;net47;net471;net472;net48;net5.0-windows;net6.0-windows;net7.0-windows;net8.0-windows</TargetFrameworks>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>disable</ImplicitUsings>
+	<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<Title>Zhy.Components.Tree.Extension</Title>
+	<Authors>WineMonk</Authors>
+	<Description>可查询树结构扩展</Description>
+	<Copyright>©2024 By WineMonk</Copyright>
+	<PackageTags>Tree;ObservableTree;</PackageTags>
+	<PackageProjectUrl>https://github.com/WineMonk/Zhy.Components.Tree</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/WineMonk/Zhy.Components.Tree</RepositoryUrl>
+	<NeutralLanguage>zh-CN</NeutralLanguage>
+	<AssemblyVersion>1.0.3</AssemblyVersion>
+	<FileVersion>1.0.3</FileVersion>
+	<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	<Version>1.0.3</Version>
+	<PackageReleaseNotes>1.添加Zhy.Components.Tree.IObservableTree.Filter方法。</PackageReleaseNotes>
+	<PackAsTool>False</PackAsTool>
+	<PackageLicenseFile>LICENSE</PackageLicenseFile>
+	<ApplicationIcon>logo_light.ico</ApplicationIcon>
+	<PackageIcon>logo_light@180.png</PackageIcon>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="logo_light.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="logo_light.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE" Link="LICENSE">
+      <PackagePath>\</PackagePath>
+      <Pack>True</Pack>
+    </None>
+    <None Include="..\logo_light@180.png" Link="logo_light%40180.png">
+      <PackagePath>\</PackagePath>
+      <Pack>True</Pack>
+    </None>
+    <None Include="..\README.md" Link="README.md">
+      <PackagePath>\</PackagePath>
+      <Pack>True</Pack>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Zhy.Components.Tree\Zhy.Components.Tree.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -3,26 +3,26 @@
   <PropertyGroup>
 	<TargetFrameworks>netcoreapp3.0;netcoreapp3.1;net461;net462;net47;net471;net472;net48;net481;net5.0;net6.0;net7.0;net8.0</TargetFrameworks>
     <ImplicitUsings>disable</ImplicitUsings>
-	  <GenerateDocumentationFile>True</GenerateDocumentationFile>
-	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	  <Title>Zhy.Components.Tree</Title>
-	  <Authors>WineMonk</Authors>
-	  <Description>可查询树结构</Description>
-	  <Copyright>©2024 By WineMonk</Copyright>
-	  <PackageReadmeFile>README.md</PackageReadmeFile>
-	  <PackageTags>Tree;</PackageTags>
-	  <PackageProjectUrl>https://github.com/WineMonk/Zhy.Components.Tree</PackageProjectUrl>
-	  <RepositoryUrl>https://github.com/WineMonk/Zhy.Components.Tree</RepositoryUrl>
-	  <NeutralLanguage>zh-CN</NeutralLanguage>
-	  <AssemblyVersion>1.0.1</AssemblyVersion>
-	  <FileVersion>1.0.1</FileVersion>
-	  <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-	  <Version>1.0.1</Version>
-	  <PackageReleaseNotes>更新支持版本</PackageReleaseNotes>
-	  <ApplicationIcon>logo_light.ico</ApplicationIcon>
-	  <PackageIcon>logo_light@180.png</PackageIcon>
-	  <PackAsTool>False</PackAsTool>
-	  <PackageLicenseFile>LICENSE</PackageLicenseFile>
+	<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<Title>Zhy.Components.Tree</Title>
+	<Authors>WineMonk</Authors>
+	<Description>可查询树结构</Description>
+	<Copyright>©2024 By WineMonk</Copyright>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<PackageTags>Tree;ObservableTree;</PackageTags>
+	<PackageProjectUrl>https://github.com/WineMonk/Zhy.Components.Tree</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/WineMonk/Zhy.Components.Tree</RepositoryUrl>
+	<NeutralLanguage>zh-CN</NeutralLanguage>
+	<AssemblyVersion>1.0.3</AssemblyVersion>
+	<FileVersion>1.0.3</FileVersion>
+	<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	<Version>1.0.3</Version>
+	<PackageReleaseNotes>1.优化结构，增加扩展。</PackageReleaseNotes>
+	<ApplicationIcon>logo_light.ico</ApplicationIcon>
+	<PackageIcon>logo_light@180.png</PackageIcon>
+	<PackAsTool>False</PackAsTool>
+	<PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
 	<ItemGroup Condition="'$(TargetFramework)' == 'net461'">

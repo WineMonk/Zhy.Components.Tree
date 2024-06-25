@@ -32,7 +32,9 @@
     <SaveComponentCacheCapacity>100</SaveComponentCacheCapacity>
     <DocumentationSources>
       <DocumentationSource sourceFile="..\Zhy.Components.Tree\bin\Debug\net48\Zhy.Components.Tree.dll" />
-<DocumentationSource sourceFile="..\Zhy.Components.Tree\bin\Debug\net48\Zhy.Components.Tree.xml" /></DocumentationSources>
+<DocumentationSource sourceFile="..\Zhy.Components.Tree\bin\Debug\net48\Zhy.Components.Tree.xml" />
+<DocumentationSource sourceFile="..\Zhy.Components.Tree.Extension\bin\Debug\net48\Zhy.Components.Tree.Extension.dll" />
+<DocumentationSource sourceFile="..\Zhy.Components.Tree.Extension\bin\Debug\net48\Zhy.Components.Tree.Extension.xml" /></DocumentationSources>
     <BuildLogFile>Build\Log\build.log</BuildLogFile>
     <HelpTitle>Zhy.Components.Tree.Documentation</HelpTitle>
     <HelpFileVersion>1.0.0.0</HelpFileVersion>
